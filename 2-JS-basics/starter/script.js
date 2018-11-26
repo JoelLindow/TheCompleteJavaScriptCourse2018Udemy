@@ -81,11 +81,128 @@
 /**********************************
 * Operator Precedence
 */
+// // Multiple Operators
+// var now = 2018;
+// var yearJohn = 1989;
+// var fullAge = 18;
+//
+// var isFullAge = now - yearJohn >= fullAge;
+//
+// console.log(isFullAge);
+//
+// // Grouping
+// var ageJohn = now - yearJohn;
+// var ageMark = 45;
+// var average = (ageJohn + ageMark) / 2;
+// console.log(average);
+//
+// // Multiple Assignments
+// var x, y;
+// x = y = (3+5)*4-6;
+// console.log(x, y);
+//
+// // More Operators
+//
+// // x = x * 2
+// // or
+// x *= 2
+// console.log(x);
+//
+// x += 10;
+// console.log(x);
+//
+// x++;
+// // or x _= 1;
+// console.log(x);
 
-var now = 2018;
-var yearJohn = 1989;
-var fullAge = 18;
 
-var isFullAge = now - yearJohn >= fullAge
+/*****************************************
+* Code Challenge
+*/
 
-console.log(isFullAge)
+// var johnMass = 200;
+// var johnHeight = 72;
+//
+// var markMass = 180;
+// var markHeight =  68;
+//
+// var markBmi = markMass / (markHeight*markHeight)
+// var johnBmi = johnMass / (johnHeight*johnHeight)
+//
+// var x = markBmi > johnBmi
+//
+// console.log('Is Marks BMI greater than Johns? ' + x)
+
+/*****************************************
+* If / Else Statements
+*/
+
+// var firstName = 'John';
+// var civilStatus = 'single';
+//
+// if (civilStatus === 'married') {
+//   console.log(firstName + ' is married');
+// } else {
+//   console.log(firstName +' will hopefully marry soon');
+// }
+
+
+/*****************************************
+* Booleans
+*/
+
+// var firstName = 'John';
+// var age = 16;
+//
+// if(age < 13) {
+//   console.log(firstName + " is a boy!");
+// } else if( age >= 13 && age < 20) {
+//   console.log(firstName + " is a teenager!");
+// } else {
+//   console.log(firstName + " is a boy!");
+// }
+
+
+/*****************************************
+* Ternary Operator and Switch Statements
+*/
+// ternary Operator
+var firstName = 'John';
+var age = 16;
+
+age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.')
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+// Switch Statements
+
+var job = 'teacher';
+switch (job) {
+  case 'teacher':
+  case 'instructor':
+  console.log(firstName + ' teaches kids how to code.');
+  case 'driver':
+  console.log(firstName + ' drives an Uber');
+  case 'designer':
+  console.log(firstName + ' designs beautiful websites');
+  default:
+  case 'teacher':
+  console.log(firstName + ' does something else.')
+}
+
+// make if/else statement work with ranges
+age = 56;
+switch (true) {
+  case age < 13:
+  console.log(firstName + ' is a bnoy.');
+  break;
+  case age >= 13 && age < 20:
+  console.log(firstName + ' is a teenager');
+  break;
+  case age >= 20 && age < 20:
+  console.log(firstName + ' is a young man;')
+  break;
+  default:
+  console.log(firstName + ' is a man.')
+}
